@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RentaTeamTest</string>
+
+    <string name="title_users">Users</string>
+    <string name="title_user_info">User info</string>
+    <string name="title_about_app">About app</string>
+
+    <string name="about_app_message">Тестовое задание для Rentateam</string>
+    <string name="error_loading_users_message">Во время загрузки произошла ошибка</string>
+</resources>

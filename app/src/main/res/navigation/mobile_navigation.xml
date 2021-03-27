@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_users">
+
+    <fragment
+        android:id="@+id/navigation_users"
+        android:name="com.delta22.rentateamtest.fragment.UsersFragment"
+        android:label="@string/title_users" />
+
+    <fragment
+        android:id="@+id/navigation_user_info"
+        android:name="com.delta22.rentateamtest.fragment.UserInfoFragment"
+        android:label="@string/title_user_info">
+        <argument
+            android:name="USER_EXTRA"
+            app:argType="com.delta22.rentateamtest.data.json.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_about_app"
+        android:name="com.delta22.rentateamtest.fragment.AboutAppFragment"
+        android:label="@string/title_about_app" />
+
+</navigation>
