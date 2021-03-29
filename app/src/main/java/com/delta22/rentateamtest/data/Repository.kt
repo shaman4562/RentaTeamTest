@@ -8,7 +8,7 @@ import retrofit2.Retrofit
 import javax.inject.Inject
 
 class Repository @Inject constructor(
-    private val retrofit: Retrofit,
+    retrofit: Retrofit,
     private val database: UsersDatabase
 ) {
     var usersApi: UsersApi = retrofit.create(UsersApi::class.java)

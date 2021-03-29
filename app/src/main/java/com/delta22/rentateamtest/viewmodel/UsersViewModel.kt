@@ -6,7 +6,7 @@ import com.delta22.rentateamtest.data.Repository
 import com.delta22.rentateamtest.fragment.UsersFragment.LoadingState
 import io.reactivex.disposables.Disposable
 
-class UsersViewModel(val repository: Repository) : ViewModel() {
+class UsersViewModel(private val repository: Repository) : ViewModel() {
 
     val state = MutableLiveData<LoadingState>(LoadingState.Loading)
 

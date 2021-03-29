@@ -11,7 +11,7 @@ import com.delta22.rentateamtest.data.json.User
 import com.delta22.rentateamtest.viewholder.UserViewHolder
 import java.util.*
 
-class UsersAdapter(val navController: NavController) : RecyclerView.Adapter<UserViewHolder>() {
+class UsersAdapter(private val navController: NavController) : RecyclerView.Adapter<UserViewHolder>() {
 
     private val listOfUsers = ArrayList<User>()
 

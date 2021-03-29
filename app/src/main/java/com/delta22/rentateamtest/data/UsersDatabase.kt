@@ -15,7 +15,7 @@ import com.delta22.rentateamtest.data.json.User
 abstract class UsersDatabase : RoomDatabase() {
 
     companion object {
-        const val DB_NAME = "UsersDatabase"
+        private const val DB_NAME = "UsersDatabase"
 
         fun getDatabase(@NonNull context: Context): UsersDatabase {
             return Room.databaseBuilder(
